@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    background-color: #f8f8f8;
+}
+
+h1{
+    margin: 30px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+    border: 1px solid #8d8c8c;
+}
+
+.icon-category{
+    display: flex;
+    flex-direction: column;
+}
