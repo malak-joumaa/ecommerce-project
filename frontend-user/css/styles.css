@@ -10,17 +10,29 @@ body{
 }
 
 h1{
-    margin: 30px;
+    margin: 25px;
+    color:#e9b3b3;
 }
 
 #nav{
     display: flex;
     justify-content: space-around;
-    padding:20px;
+    padding:10px;
     border: 1px solid #8d8c8c;
+    text-align: center;
+    font-weight: 600;
+    color:#464646;
 }
 
 .icon-category{
     display: flex;
     flex-direction: column;
+}
+
+.icon-category img{
+    width: 40px;
+}
+
+.category:hover{
+    color: pink;
 }
