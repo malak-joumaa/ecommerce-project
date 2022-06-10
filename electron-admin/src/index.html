@@ -9,7 +9,14 @@
   <body>
     <h1>BabyBear</h1>
     <div id="add_category" class="container">
-      
+      <h2>Add Category</h2>
+      <form>
+        <hr>
+        <label>New Cateogry:</label>
+        <input type="text" placeholder="New category">
+        <br>
+        <button>Add</button>
+      </form>
     </div>
     <div id="add_item" class="container">
       <h2>Add Item</h2>
@@ -22,13 +29,15 @@
         </section>
         <br>
         <label>Name:</label>
-        <input type="text" placeholder="Enter item name">
+        <input type="text" id="name" placeholder="Enter item name">
         <br>
         <label>Price:</label>
-        <input type="text" placeholder="Enter price">
+        <input type="text" id="price" placeholder="Enter price">
         <br>
         <label>Category:</label>
-        <input type="text" placeholder="Enter category">
+        <select id="category">
+          <option value="" selected disabled>Select category</option>
+        </select>
         <br>
         <button>Add Item</button>
       </form>

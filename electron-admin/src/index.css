@@ -2,6 +2,7 @@ body {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   background-color: rgb(235, 187, 195);
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ body {
 h1{
   color: rgb(235, 187, 195);
   text-align: center;
-  text-decoration: underline black;
   padding-top: 30px;
   color: #f8f8f8;
 }
@@ -21,9 +21,13 @@ h2{
   width: 500px;
 }
 
+hr{
+  margin-bottom: 25px;
+}
+
 /* Container */
 .container{
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 10px;
   width: 800px;
   border-radius: 20px;
@@ -34,17 +38,17 @@ h2{
 /* Add Item */
 form{
   margin: 0 auto;
-  width:520px;
+  width:500px;
   overflow: hidden;
 }
 
 label{
-  margin: 20px;
   display: inline-block;
-  width: 110px;
+  width: 140px;
+  font-size: 1.1em;
 }
 
-input[type="text"]{
+input[type="text"], select{
   margin: 10px 0 25px;
   height: 45px;
   width: 350px;
@@ -71,8 +75,8 @@ button{
   cursor:pointer;
   width: 70px;
   text-align: center;
-  font-weight: bold;
-  margin: 20px auto;
+  margin: 0 auto;
+  font-size: 1.1em;
 }
 
 i{
