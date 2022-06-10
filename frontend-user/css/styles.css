@@ -87,16 +87,65 @@ h1{
     background-color: pink;
 }
 #sign-in{
-    margin: 200px auto;
+    margin: 165px auto;
     width: 60vw;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    display: flex;
 }
 
 #sign-in-left{
     width: 50%;
 }
 #sign-in-left img{
-    width: 80%;
+    width: 83%;
     margin: 150px 50px;
+}
+#sign-in-right{
+    width: 50%;
+    margin-left: 2%;
+}
+
+#sign-in-right h1{
+    text-align: center;
+    color: #ffb3c0;
+    margin: 50px;
+}
+
+form{
+    margin-top: 100px;
+}
+
+input {
+    width: 90%;
+    appearance: none;
+	border-radius: 0;
+	margin: 15px 0 40px;
+    border: 0;
+	background-color: transparent;
+	border-bottom: 2px solid #eee;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.input-label {
+	color: #8597a3;
+    font-size: 1.1em;
+}
+
+
+input:focus, input:valid{
+	outline: 0;
+	border-bottom-color: pink;
+}
+
+button{
+    width: 100px;
+    height: 45px;
+    font-size: 1.1em;
+    background-color: #ffb3c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
 }
