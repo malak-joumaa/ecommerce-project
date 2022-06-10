@@ -14,6 +14,51 @@ body {
 }
 
 h1{
-  color: pink;
+  color: rgb(235, 187, 195);
   text-align: center;
+  text-decoration: underline black;
+}
+
+/* Add Item */
+#add_item{
+  margin-top: 50px;
+}
+
+form{
+  margin: 0 auto;
+  width:500px;
+  overflow: hidden;
+}
+
+label{
+  margin: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+}
+
+input[type="text"]{
+  margin: 10px 0 25px;
+  height: 45px;
+  width: 350px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 2px solid rgb(235, 187, 195);
+  padding: 10px;
+}
+
+#file-upload-button{
+  background-color: white;
+  border: none;
+}
+
+#image-lbl{
+  cursor:pointer;
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#inputTag{
+  display: none;
 }
