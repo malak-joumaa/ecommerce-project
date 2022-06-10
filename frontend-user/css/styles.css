@@ -29,10 +29,48 @@ h1{
     flex-direction: column;
 }
 
+.icon-category:first-child{
+    background-color: #ffd0d8;
+    padding: 5px;
+    color: #f8f8f8;
+    border-radius: 10px;
+}
+
 .icon-category img{
     width: 40px;
 }
 
+
 .category:hover{
     color: pink;
+}
+
+/* Item card */
+.item{
+    flex: 0 0 350px;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 20px;
+    margin-left: 50px;
+    scroll-snap-align: center;
+    cursor: pointer;
+    /* remove later */
+    margin-top: 40px;
+}
+.item:last-child{
+    margin-right: 50px;
+}
+.item-info{
+    padding: 10px;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.item-name{
+    font-size: 20px;
+    font-weight: 400;
 }
