@@ -81,3 +81,12 @@ h1{
     font-size: 20px;
     font-weight: 400;
 }
+
+/* Sign In page */
+#sign-in-body{
+    background-color: pink;
+}
+#sign-in{
+    margin: 200px auto;
+    width: 70vw;
+}
