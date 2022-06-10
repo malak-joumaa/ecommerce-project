@@ -14,6 +14,7 @@ h1{
   text-align: center;
   padding-top: 30px;
   color: white;
+  font-size: 2.7em;
 }
 
 h2{
@@ -85,4 +86,26 @@ i{
 
 #inputTag{
   display: none;
+}
+
+/* Media Query */
+@media only screen and (max-width:860px){
+  .container{
+    width: 70vw;
+  }
+  form ,h2{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width:620px){
+  .container{
+    width: 60vw;
+  }
+  form ,h2{
+    width: 50vw;
+  }
+  input[type="text"], select{
+    width: 250px;
+  }
 }
