@@ -88,5 +88,15 @@ h1{
 }
 #sign-in{
     margin: 200px auto;
-    width: 70vw;
+    width: 60vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+#sign-in-left{
+    width: 50%;
+}
+#sign-in-left img{
+    width: 80%;
+    margin: 150px 50px;
 }
