@@ -1,9 +1,6 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
   background-color: #f8f8f8;
 }
 
@@ -19,9 +16,17 @@ h1{
   text-decoration: underline black;
 }
 
+h2{
+  margin: 20px auto;
+  width: 500px;
+}
+
 /* Add Item */
 #add_item{
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px;
 }
 
 form{
@@ -32,7 +37,6 @@ form{
 
 label{
   margin: 20px;
-  font-weight: bold;
   display: inline-block;
   width: 80px;
 }
@@ -42,11 +46,12 @@ input[type="text"]{
   height: 45px;
   width: 350px;
   font-size: 1em;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid rgb(235, 187, 195);
   padding: 10px;
 }
 
+/* Select image */
 #file-upload-button{
   background-color: white;
   border: none;
@@ -57,6 +62,7 @@ input[type="text"]{
   width: 70px;
   text-align: center;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 #inputTag{

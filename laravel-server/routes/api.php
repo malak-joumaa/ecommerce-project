@@ -19,4 +19,5 @@ Route::post('/add_item', [AdminController::class, 'addItem']);
 Route::post('/add_category', [AdminController::class, 'addCategory']);
 
 //User Controller
-Route::get('/items', [UserController::class, 'getItems']);
+Route::get('/items/{category_id}', [UserController::class, 'getItems']);
+Route::post('/favourite', [UserController::class, 'favourite']);

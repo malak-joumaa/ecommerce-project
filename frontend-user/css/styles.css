@@ -18,11 +18,15 @@ h1{
     display: flex;
     justify-content: space-around;
     padding:10px;
-    border: 1px solid #8d8c8c;
     text-align: center;
     font-weight: 600;
     color:#464646;
-}
+    /* background-color: #c4ecf9; */
+    border: 1px solid #464646;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px; */
+    /* margin-left: 10px;
+    margin-right: 10px;*/
+} 
 
 .icon-category{
     display: flex;
@@ -41,8 +45,11 @@ h1{
 }
 
 
-.category:hover{
-    color: pink;
+.icon-category:hover{
+    background-color: #ffd0d8;
+    padding: 5px;
+    color: #f8f8f8;
+    border-radius: 10px;
 }
 
 /* Item card */
