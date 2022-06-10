@@ -1,6 +1,7 @@
 body {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  background-color: rgb(235, 187, 195);
+  background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
+  background-size: cover;
 }
 
 *{
@@ -10,10 +11,9 @@ body {
 }
 
 h1{
-  color: rgb(235, 187, 195);
   text-align: center;
   padding-top: 30px;
-  color: #f8f8f8;
+  color: white;
 }
 
 h2{
