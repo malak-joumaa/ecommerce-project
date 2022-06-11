@@ -42,36 +42,5 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-
-var add_category = document.getElementById("add_category");
-add_category.addEventListener("click",function(){
-  let new_category = document.getElementById("new_category");
-
-  let data = new FormData();
-        data.append('image', base64String);
-        data.append('new_category', new_category.value);
-        axios({
-            method: 'post',
-            url: 'http://localhost/Momato/Momato-Backend/APIs/add_restaurant.php',
-            data: data,
-        })
-        .then(function (response) {
-            let category_id = response.data.category_id;
-            console.log(category_id);
-            if(restaurant_id == -1){
-                result.innerText="Couldn't add restaurant!";
-            }
-            else{
-                result.style.color="rgb(17, 149, 17)"
-                result.innerText="Category Added Successfully!";
-                setTimeout(hideElement, 2000)
-                function hideElement() {
-                result.innerText=""}
-                window.location.reload();
-            }
-        });
-});
-
