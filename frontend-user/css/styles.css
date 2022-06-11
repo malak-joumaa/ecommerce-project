@@ -21,11 +21,13 @@ h1{
     text-align: center;
     font-weight: 600;
     color:#464646;
-    /* background-color: #c4ecf9; */
+    background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
     border: 1px solid #464646;
+    border: none;
+    border-radius: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px; */
     /* margin-left: 10px;
-    margin-right: 10px;*/
+    margin-right: 10px; */
 } 
 
 .icon-category{
@@ -34,21 +36,23 @@ h1{
 }
 
 .icon-category:first-child{
-    background-color: #ffd0d8;
+    background-color: #f8f8f8;
     padding: 5px;
-    color: #f8f8f8;
     border-radius: 10px;
+    width: 75px;
+    height: 75px;
 }
 
 .icon-category img{
     width: 40px;
+    padding-top: 5px;
 }
 
 
 .icon-category:hover{
-    background-color: #ffd0d8;
-    padding: 5px;
-    color: #f8f8f8;
+    background-color: #f8f8f8;
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
 }
 
