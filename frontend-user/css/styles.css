@@ -9,9 +9,21 @@ body{
     background-color: #f8f8f8;
 }
 
-h1{
-    margin: 25px;
+#title-logout{
+    margin: 18px 0;
     color:#ffb3c0;
+    font-size: 2em;
+}
+
+#title{
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+.logout{
+    float: right;
+    margin: 0 30px;
+    cursor: pointer;
 }
 
 #nav{
@@ -25,9 +37,6 @@ h1{
     border: 1px solid #464646;
     border: none;
     border-radius: 5px;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px; */
-    /* margin-left: 10px;
-    margin-right: 10px; */
 } 
 
 .icon-category{
@@ -38,7 +47,7 @@ h1{
 .icon-category:first-child{
     background-color: #f8f8f8;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 75px;
     height: 75px;
 }
@@ -53,7 +62,8 @@ h1{
     background-color: #f8f8f8;
     width: 75px;
     height: 75px;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* Item card */
