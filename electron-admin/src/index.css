@@ -12,9 +12,18 @@ body {
 
 h1{
   text-align: center;
-  padding-top: 30px;
+  padding-top: 16px;
   color: white;
   font-size: 2.7em;
+}
+
+#sign-in-title{
+  text-align: center;
+  color: white;
+  font-size: 2.7em;
+}
+#sign-in-title img{
+  width: 47px;
 }
 
 h2{

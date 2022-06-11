@@ -114,6 +114,7 @@ body{
 /* Sign In Start */
 #sign-in-body{
     background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
+    height: 100vh;
 }
 #sign-in{
     margin: 60px auto;
