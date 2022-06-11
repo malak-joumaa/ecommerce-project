@@ -140,7 +140,7 @@ input {
 
 .input-label {
 	color: #8597a3;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 
@@ -152,10 +152,22 @@ input:focus, input:valid{
 button{
     width: 100px;
     height: 45px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     background-color: #ffb3c0;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+#sign-in-right a, #sign-in-right a:link, #sign-in-right a:visited{
+    color: #ffb3c0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#sign-in-right span{
+    color: #8597a3;
+    margin-right: 10px
 }
