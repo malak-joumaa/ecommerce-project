@@ -11,7 +11,7 @@ body{
 
 #title-logout{
     margin: 18px 0;
-    color:#ffb3c0;
+    color:#f9c2c4;
     font-size: 2em;
 }
 
@@ -68,7 +68,6 @@ body{
 
 /* Item card */
 .item{
-    flex: 0 0 350px;
     width: 250px;
     height: 250px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
@@ -106,10 +105,15 @@ body{
 .fa-heart:hover{
     color: red;
 }
+/* Items display */
+#all-items{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Sign In Start */
 #sign-in-body{
-    background-color: pink;
+    background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
 }
 #sign-in{
     margin: 60px auto;
@@ -144,7 +148,7 @@ body{
 
 #sign-in-right h1{
     text-align: center;
-    color: #ffb3c0;
+    color: #f9c0c1;
     margin: 50px;
 }
 
@@ -179,7 +183,7 @@ button{
     width: 100px;
     height: 45px;
     font-size: 1.2em;
-    background-color: #ffb3c0;
+    background-color: #f9c0c1;
     color: white;
     border: none;
     border-radius: 5px;
