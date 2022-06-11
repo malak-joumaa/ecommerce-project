@@ -87,11 +87,21 @@ h1{
     background-color: pink;
 }
 #sign-in{
-    margin: 165px auto;
+    margin: 60px auto;
     width: 60vw;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
     display: flex;
+}
+
+#sign-in-title{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 2.7em;
+}
+#sign-in-title img{
+    width: 2.5%;
 }
 
 #sign-in-left{
