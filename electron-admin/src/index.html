@@ -25,14 +25,16 @@
     <!-- Add Category End -->
 
     <!-- Add Item Start -->
-    <div id="add_item" class="container">
+    <div id="item" class="container">
       <h2>Add Item</h2>
       <form>
         <hr>
+        <span id="result1"></span>
+        <br>
         <section id="image-lbl">
           <i class="fa fa-2x fa-camera"></i>
           <br>Select Image
-          <input id="inputTag" type="file" />
+          <input id="image" type="file" />
         </section>
         <br>
         <label>Name:</label>
@@ -46,7 +48,7 @@
           <option value="" selected disabled>Select category</option>
         </select>
         <br>
-        <button>Add Item</button>
+        <button id="add_item">Add Item</button>
       </form>
       <!-- Add Item End -->
     </div>

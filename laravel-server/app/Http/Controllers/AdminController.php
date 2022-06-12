@@ -30,4 +30,12 @@ class AdminController extends Controller
             "category" => $category
         ], 200);
     }
+
+    public function getCategories(){
+        $categories = categories::all();
+        return response()->json([
+            "status" => "Success",
+            "categories" => $categories
+        ], 200);
+    }
 }

@@ -93,9 +93,9 @@ i{
   color: #e7a1ad;
 }
 
-#inputTag{
+/* #inputTag{
   display: none;
-}
+} */
 
 /* Media Query */
 @media only screen and (max-width:860px){
