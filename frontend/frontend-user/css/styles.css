@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    background-color: #f8f8f8;
+}
+
+#title-logout{
+    margin: 18px 0;
+    color:#f9c2c4;
+    font-size: 2em;
+}
+
+#title{
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+.logout{
+    float: right;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    text-align: center;
+    font-weight: 600;
+    color:#464646;
+    background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
+    border: 1px solid #464646;
+    border: none;
+    border-radius: 5px;
+} 
+
+.icon-category{
+    display: flex;
+    flex-direction: column;
+}
+
+.onclick{
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.icon-category img{
+    width: 40px;
+    padding-top: 5px;
+}
+
+
+.icon-category:hover{
+    background-color: #f8f8f8;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Item card */
+.item{
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 20px;
+    margin-left: 50px;
+    scroll-snap-align: center;
+    /* remove later */
+    margin-top: 40px;
+}
+.item:last-child{
+    margin-right: 50px;
+}
+.item-info{
+    padding: 10px;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.item-name{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.item-price{
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: green;
+}
+
+.fa-heart{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.fa-heart:hover{
+    color: red;
+}
+/* Items display */
+#all-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sign In Start */
+#sign-in-body{
+    background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
+    height: 100vh;
+}
+#sign{
+    margin: 60px auto;
+    width: 1100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    display: flex;
+    padding: 40px;
+}
+
+#sign-in-title{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 2.7em;
+}
+#sign-in-title img{
+    width: 47px;
+}
+
+#sign-in-left{
+    width: 50%;
+}
+#sign-in-left img{
+    width: 83%;
+    margin: 100px 50px;
+}
+#sign-in-right{
+    width: 50%;
+    margin-left: 2%;
+}
+
+#sign-in-right h1{
+    text-align: center;
+    color: #f9c0c1;
+    margin: 50px;
+}
+
+#sign form{
+    margin-top: 100px;
+}
+
+input {
+    width: 90%;
+    appearance: none;
+	border-radius: 0;
+	margin: 15px 0 40px;
+    border: 0;
+	background-color: transparent;
+	border-bottom: 2px solid #eee;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.input-label {
+	color: #8597a3;
+    font-size: 1.2em;
+}
+
+
+input:focus, input:valid{
+	outline: 0;
+	border-bottom-color: pink;
+}
+
+button{
+    width: 100px;
+    height: 45px;
+    font-size: 1.2em;
+    background-color: #f9c0c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+#sign-in-right a, #sign-in-right a:link, #sign-in-right a:visited{
+    color: #ffb3c0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#sign-in-right span{
+    color: #8597a3;
+    margin-right: 10px
+}
+/* Sign In End */
+
+/* Sign Up Start */
+#sign-up-h1{
+    margin: 20px !important;
+}
+
+#sign-up-form{
+    margin-top: 50px !important;
+}
+
+#sign-up-image{
+    margin: 150px 50px !important;
+}
+
+
+/* media query */
+@media only screen and (max-width:1300px){
+    #sign{
+        width: 800px;
+    }
+    #sign-in-left img{
+        width: 85%;
+        margin: 140px 15px;
+    }
+}
+
+@media only screen and (max-width:950px){
+    #sign{
+        width: 700px;
+    }
+    #sign-in-left img{
+        width: 85%;
+        margin: 140px 15px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    #sign{
+        width: 90%;
+        flex-direction: column;
+    }
+    #sign-in-right, #sign-in-left{
+        width: 100%;
+    }
+    #sign-in-right h1{
+        margin: top 40px;
+        margin-bottom: 15px;
+    }
+    #sign-in-left img{
+        width: 90%;
+        margin: 0px auto !important;
+    }    
+}

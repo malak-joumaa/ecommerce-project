@@ -13,10 +13,10 @@ class CreateLikesTable extends Migration
      */
     public function up()
     {
-        Schema::create('likes', function (Blueprint $table) {
+        Schema::create('user_item', function (Blueprint $table) {
             $table->id();
-            $table->index('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('item_id')->constrained();
             $table->timestamps();
         });
     }
