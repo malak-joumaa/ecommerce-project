@@ -26,9 +26,10 @@ add_category.addEventListener("click",function(e){
     e.preventDefault();
     let cat_name = document.getElementById("new_category").value;
     let result = document.getElementById('result');
-
+    
     let data = new FormData();
         data.append('cat_name', cat_name);
+        data.append('cat_image', base64String);
         axios({
             method: 'post',
             url: 'http://127.0.0.1:8000/api/add_category',
@@ -46,8 +47,10 @@ add_category.addEventListener("click",function(e){
         })
 });
 let image = document.getElementById("image");
+let c_image = document.getElementById("c-image");
 let base64String = "";
 image.addEventListener("change", getImage);
+c_image.addEventListener("change", getImage);
 function getImage() {
     var file = document.querySelector('input[type=file]')['files'][0];
     var reader = new FileReader();

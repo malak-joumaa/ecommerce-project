@@ -81,7 +81,7 @@ button{
 }
 
 /* Select image */
-#image-lbl{
+.image{
   cursor:pointer;
   width: 70px;
   text-align: center;
