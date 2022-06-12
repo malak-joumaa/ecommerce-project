@@ -1,8 +1,7 @@
 window.onload = function () {
 //Get Categories
 function getCategories(){
-    let select = document.getElementById('category')
-    let data = new FormData();
+    let select = document.getElementById('category');
     axios({
         method: 'get',
         url: 'http://127.0.0.1:8000/api/get_categories',
