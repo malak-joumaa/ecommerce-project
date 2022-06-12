@@ -47,10 +47,10 @@ add_category.addEventListener("click",function(e){
         })
 });
 let image = document.getElementById("image");
-let c_image = document.getElementById("c-image");
+// let c_image = document.getElementById("c-image");
 let base64String = "";
 image.addEventListener("change", getImage);
-c_image.addEventListener("change", getImage);
+// c_image.addEventListener("change", getImage);
 function getImage() {
     var file = document.querySelector('input[type=file]')['files'][0];
     var reader = new FileReader();

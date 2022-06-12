@@ -1,64 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>BabyBear🤱🏻</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="https://kit.fontawesome.com/d8969b722a.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <h1 id="sign-in-title">BabyBear <img src="../../frontend-user/assets/socks.png"></h1>
-
-    <!-- Add Category Start -->
-    <div id="addcategory" class="container">
-      <h2>Add Category</h2>
-      <form>
-        <hr>
-        <span id="result"></span>
-        <br>
-        <section id="image-lbl1" class ="image">
-          <i class="fa fa-2x fa-camera"></i>
-          <br>Select Image
-          <input id="c-image" type="file" />
-        </section>
-        <br>
-        <label>New Cateogry:</label>
-        <input type="text" placeholder="New category" id="new_category">
-        <br>
-        <button id="add_category">Add</button>
-      </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="sign-in-body">
+    <h1 id="sign-in-title">BabyBear <img src="assets/dress.png"></h1>
+    <div id="sign">
+        <div id="sign-in-left">
+            <img src="assets/baby-login.png">
+        </div>
+        <div id="sign-in-right">
+            <h1>Sign In</h1>
+            <form>
+                <label class="input-label">Email</label>
+                <br>
+                <input type="email" id="email" class="input-field">
+                <br>
+                <label class="input-label">Password</label>
+                <br>
+                <input type="password" id="password" class="input-field">
+                <br>
+                <button id="sign-in-btn">Sign in</button>
+                <!-- <br>
+                <span>Don't have an account?</span> <a href="sign_up.html">Sign Up</a> -->
+            </form>
+        </div>
     </div>
-    <!-- Add Category End -->
-
-    <!-- Add Item Start -->
-    <div id="item" class="container">
-      <h2>Add Item</h2>
-      <form>
-        <hr>
-        <span id="result1"></span>
-        <br>
-        <section id="image-lbl" class ="image">
-          <i class="fa fa-2x fa-camera"></i>
-          <br>Select Image
-          <input id="image" type="file" />
-        </section>
-        <br>
-        <label>Name:</label>
-        <input type="text" id="name" placeholder="Enter item name">
-        <br>
-        <label>Price:</label>
-        <input type="text" id="price" placeholder="Enter price">
-        <br>
-        <label>Category:</label>
-        <select id="category">
-          <option value="" selected disabled>Select category</option>
-        </select>
-        <br>
-        <button id="add_item">Add Item</button>
-      </form>
-      <!-- Add Item End -->
-    </div>
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="render.js"></script>
-  </body>
+    <script src="js/sign-in.js"></script>
+</body>
 </html>

@@ -17,12 +17,12 @@ h1{
   font-size: 2.7em;
 }
 
-#sign-in-title{
+#title{
   text-align: center;
   color: white;
   font-size: 2.7em;
 }
-#sign-in-title img{
+#title img{
   width: 47px;
 }
 
@@ -46,7 +46,7 @@ hr{
 }
 
 /* Add Item */
-form{
+#admin form{
   margin: 0 auto;
   width:500px;
   overflow: hidden;
@@ -58,7 +58,7 @@ label{
   font-size: 1.1em;
 }
 
-input[type="text"], select{
+#admin input[type="text"], select{
   margin: 10px 0 25px;
   height: 45px;
   width: 350px;
@@ -68,7 +68,7 @@ input[type="text"], select{
   padding: 10px;
 }
 
-button{
+#admin button{
   margin: 10px 0 20px;
   height: 40px;
   width: 100px;
@@ -117,4 +117,137 @@ i{
   input[type="text"], select{
     width: 250px;
   }
+}
+
+/* SignIn */
+/* Sign In Start */
+#sign-in-body{
+  background-image: linear-gradient(to bottom right, rgb(235, 187, 195), lightblue);
+  height: 100vh;
+}
+#sign{
+  margin: 60px auto;
+  width: 1100px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  display: flex;
+  padding: 40px;
+}
+
+#sign-in-title{
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  font-size: 2.7em;
+}
+#sign-in-title img{
+  width: 47px;
+}
+
+#sign-in-left{
+  width: 50%;
+}
+#sign-in-left img{
+  width: 83%;
+  margin: 100px 50px;
+}
+#sign-in-right{
+  width: 50%;
+  margin-left: 2%;
+}
+
+#sign-in-right h1{
+  text-align: center;
+  color: #f9c0c1;
+  margin: 50px;
+}
+
+#sign form{
+  margin-top: 100px;
+}
+
+#sign input {
+  width: 90%;
+  appearance: none;
+  border-radius: 0;
+  margin: 15px 0 40px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid #f9c0c1;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.input-label {
+color: #8597a3;
+  font-size: 1.2em;
+}
+
+
+input:focus, input:valid{
+outline: 0;
+border-bottom-color: pink;
+}
+
+#sign button{
+  width: 100px;
+  height: 45px;
+  font-size: 1.2em;
+  background-color: #f9c0c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top:10px;
+  margin-bottom: 30px;
+}
+
+#sign-in-right a, #sign-in-right a:link, #sign-in-right a:visited{
+  color: #ffb3c0;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+#sign-in-right span{
+  color: #8597a3;
+  margin-right: 10px
+}
+/* Sign In End */
+
+/* media query */
+@media only screen and (max-width:1300px){
+  #sign{
+      width: 800px;
+  }
+  #sign-in-left img{
+      width: 85%;
+      margin: 140px 15px;
+  }
+}
+
+@media only screen and (max-width:950px){
+  #sign{
+      width: 700px;
+  }
+  #sign-in-left img{
+      width: 85%;
+      margin: 140px 15px;
+  }
+}
+
+@media only screen and (max-width:850px){
+  #sign{
+      width: 90%;
+      flex-direction: column;
+  }
+  #sign-in-right, #sign-in-left{
+      width: 100%;
+  }
+  #sign-in-right h1{
+      margin: top 40px;
+      margin-bottom: 15px;
+  }
+  #sign-in-left img{
+      width: 90%;
+      margin: 0px auto !important;
+  }    
 }
