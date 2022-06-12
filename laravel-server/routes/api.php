@@ -15,10 +15,14 @@ Route::group(['middleware' => 'api'], function($router) {
 });
 
 //Admin Controller
+
 Route::post('/add_item', [AdminController::class, 'addItem']);
 Route::post('/add_category', [AdminController::class, 'addCategory']);
 Route::get('/get_categories', [AdminController::class, 'getCategories']);
 
+
 //User Controller
-Route::get('/items/{category_id}', [UserController::class, 'getItems']);
-Route::post('/favourite', [UserController::class, 'favourite']);
+Route::group(['middleware' => 'favorite'], function($router) {
+    Route::get('/items/{category_id}', [UserController::class, 'getItems']);
+    Route::post('/favorite', [UserController::class, 'favorite']);
+});

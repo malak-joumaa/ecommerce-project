@@ -4,8 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Auth;
 
-class favourite
+class favorite
 {
     /**
      * Handle an incoming request.
@@ -17,10 +18,12 @@ class favourite
     public function handle(Request $request, Closure $next)
     {
         $user = Auth::user();
-        if($user && $user->user_type_id == 1 ){
+        if($user){
             return $next($request);
         }
 
-        return redirect(route("not-found"));
+        return response()->json([
+            "status" => "Unauthorized"
+        ],200);
     }
 }
