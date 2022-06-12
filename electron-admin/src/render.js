@@ -68,13 +68,13 @@ add_item.addEventListener("click",function(e){
     let name = document.getElementById("name").value;
     let price = document.getElementById("price").value;
     let category = document.getElementById("category").value;
-    let result1 = document.getElementById('result');
+    let result1 = document.getElementById('result1');
 
     let data = new FormData();
-        data.append('image', "viyhyhyvjjknkn");
+        data.append('image', base64String);
         data.append('name',name);
         data.append('price',price);
-        data.append('category',2);
+        data.append('category',category);
         axios({
             method: 'post',
             url: 'http://127.0.0.1:8000/api/add_item',
@@ -82,13 +82,11 @@ add_item.addEventListener("click",function(e){
         })
         .then(function (response) {
           console.log(response)
-        //   let category_id = response.data.category.id;
-        //   console.log(category_id);
-        //   result1.style.color="rgb(17, 149, 17)"
-        //   result1.innerText="Item Added Successfully!";
-        //   setTimeout(hideElement, 2000)
-        //   function hideElement() {
-        //   result.innerText=""}
+          result1.style.color="rgb(17, 149, 17)"
+          result1.innerText="Item Added Successfully!";
+          setTimeout(hideElement, 2000)
+          function hideElement() {
+          result1.innerText=""}
         })
 });
 
