@@ -24,6 +24,7 @@ class AdminController extends Controller
     public function addCategory(Request $request){
         $category = new categories;
         $category->cat_name = $request->cat_name;
+        $category->cat_image = $request->cat_image;
         $category->save();
         return response()->json([
             "status" => "Success",
