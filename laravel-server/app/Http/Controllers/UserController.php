@@ -17,10 +17,11 @@ class UserController extends Controller
         ], 200);
     }
 
-    public function favorite(Request $request){
-        if (Auth::check()){
+    public function addFavorite(Request $request){
+            $user = Auth::user();
+            $user_id = $user->id;
             $favorite = new likes;
-            $favorite->user_id = $request->user_id;
+            $favorite->user_id = $user_id;
             $favorite->item_id = $request->item_id;
             $favorite->save();
             return response()->json([
@@ -28,5 +29,4 @@ class UserController extends Controller
                 "favourite" => $favorite
             ], 200);
         }    
-    }
 }

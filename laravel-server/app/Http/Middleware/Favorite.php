@@ -21,9 +21,8 @@ class favorite
         if($user){
             return $next($request);
         }
-
         return response()->json([
-            "status" => "Unauthorized"
+            "status" => "You are not logged in"
         ],200);
     }
 }

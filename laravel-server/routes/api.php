@@ -23,6 +23,6 @@ Route::get('/get_categories', [AdminController::class, 'getCategories']);
 
 //User Controller
 Route::get('/items/{category_id}', [UserController::class, 'getItems']);
-Route::group(['middleware' => 'favorite'], function($router) {
-    Route::post('/favorite', [UserController::class, 'favorite']);
+Route::group(['middleware' => 'favorite'], function() {
+    Route::post('/favorite', [UserController::class, 'addFavorite']);
 });
