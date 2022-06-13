@@ -1,16 +1,21 @@
 var logout = document.getElementById('logout');
-logout.addEventListener('click',async function(event){
+logout.addEventListener('click',function(event){
     event.preventDefault();
     let token = localStorage.getItem("token");
+    if(token == null){
+        alert("You are not loggen in")
+        return
+    }
     console.log('bearer '+token)
-    let data = new FormData();
-    await axios.post('http://127.0.0.1:8000/api/logout', {
-        data:data,
-        headers: {
-            'Authorization': 'bearer '+token,
-            'Accept': 'application/json',
-          } 
-      })   
+
+    let url = "http://127.0.0.1:8000/api/logout";
+    let headers={}
+    headers.Authorization = "Bearer " + token;
+    axios({
+        method:'post',
+        url:url,
+        headers:headers,
+    })   
     .then(function (response) {
         //console.log(response);
         console.log('here')
@@ -80,7 +85,6 @@ window.onload = function () {
                     likes[i].style.color="red";
                     item_id = likes[i].getAttribute("val")
                     let data = new FormData();
-                    data.append('user_id', 3);
                     data.append('item_id', item_id);
                     axios({
                         method: 'post',

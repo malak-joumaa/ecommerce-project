@@ -96,7 +96,7 @@ add_item.addEventListener("click",function(e){
         event.preventDefault();
         let token = localStorage.getItem("token");
         if(token == null){
-            alert("dj")
+            alert("User not logged in")
             return
         }
         console.log('bearer '+token)
