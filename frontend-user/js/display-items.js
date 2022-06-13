@@ -1,10 +1,10 @@
 var logout = document.getElementById('logout');
-logout.addEventListener('click',function(event){
+logout.addEventListener('click',async function(event){
     event.preventDefault();
-    var token = localStorage.getItem("token");
+    let token = localStorage.getItem("token");
     console.log('bearer '+token)
     let data = new FormData();
-    axios.post('http://127.0.0.1:8000/api/logout', {
+    await axios.post('http://127.0.0.1:8000/api/logout', {
         data:data,
         headers: {
             'Authorization': 'bearer '+token,
@@ -74,7 +74,7 @@ window.onload = function () {
 
             // favourite
             let likes = document.getElementsByTagName("i");
-            for(let i=0; i < likes.length; i++){
+            for(let i=1; i < likes.length; i++){
                 likes[i].addEventListener("click", function(){
                     console.log('clicked')
                     likes[i].style.color="red";
@@ -86,6 +86,10 @@ window.onload = function () {
                         method: 'post',
                         url: 'http://127.0.0.1:8000/api/favorite',
                         data: data,
+                        headers: {
+                            'Authorization': 'bearer '+localStorage.getItem("token"),
+                            'Accept': 'application/json',
+                          } 
                     }).then(function(response){
                             console.log(item_id)
                     })
