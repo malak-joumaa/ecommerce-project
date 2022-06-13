@@ -94,21 +94,25 @@ add_item.addEventListener("click",function(e){
     var logout = document.getElementById('logout');
     logout.addEventListener('click',function(event){
         event.preventDefault();
-        var token = localStorage.getItem("token");
+        let token = localStorage.getItem("token");
+        if(token == null){
+            alert("dj")
+            return
+        }
         console.log('bearer '+token)
-        let data = new FormData();
-        axios.post('http://127.0.0.1:8000/api/logout', {
-            data:data,
-            headers: {
-                'Authorization': 'bearer '+token,
-                'Accept': 'application/json',
-            } 
+    
+        let url = "http://127.0.0.1:8000/api/logout";
+        let headers={}
+        headers.Authorization = "Bearer " + token;
+        axios({
+            method:'post',
+            url:url,
+            headers:headers,
         })   
         .then(function (response) {
-            //console.log(response);
-            console.log('here')
+            localStorage.removeItem('token')
             window.location.href = "../index.html";
         });
-});
+    });
 }
 
