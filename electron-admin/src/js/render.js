@@ -90,5 +90,25 @@ add_item.addEventListener("click",function(e){
         })
 });
 
+    // Logout
+    var logout = document.getElementById('logout');
+    logout.addEventListener('click',function(event){
+        event.preventDefault();
+        var token = localStorage.getItem("token");
+        console.log('bearer '+token)
+        let data = new FormData();
+        axios.post('http://127.0.0.1:8000/api/logout', {
+            data:data,
+            headers: {
+                'Authorization': 'bearer '+token,
+                'Accept': 'application/json',
+            } 
+        })   
+        .then(function (response) {
+            //console.log(response);
+            console.log('here')
+            window.location.href = "../index.html";
+        });
+});
 }
 

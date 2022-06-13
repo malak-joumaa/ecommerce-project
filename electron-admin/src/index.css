@@ -10,17 +10,21 @@ body {
   box-sizing: border-box;
 }
 
-h1{
+#title-logout{
   text-align: center;
-  padding-top: 16px;
   color: white;
   font-size: 2.7em;
+  font-weight: bold;
 }
 
 #title{
-  text-align: center;
-  color: white;
-  font-size: 2.7em;
+  margin-left: 100px;
+}
+
+.logout{
+  float: right;
+  margin: 0 30px;
+  cursor: pointer;
 }
 #title img{
   width: 47px;
